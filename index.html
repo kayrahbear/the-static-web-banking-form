@@ -1,0 +1,101 @@
+<!-- Build a form that accepts a loan application. It must have the following fields.
+
+Applicant first name
+Applicant middle initial
+Applicant last name
+Applicant address
+Applicant occupation
+Applicant employer
+Employer address
+Type of loan select element with these options:
+Commercial
+Real estate
+Personal
+Mortgage
+Requested amount of loan
+Radio button elements for loan length
+5 years
+15 years
+30 years
+Checkbox group for special conditions
+I have a down payment
+Out-of-state resident
+Married
+Loan will be co-signed
+A text area to allow for additional comments
+Applicant email address
+Applicant telephone number
+Applicant LinkedIn URL -->
+
+<form>
+    <div="top-wrapper">
+        <h1>Loan Application Form</h1>
+        <p>All fields are required. If you need assistance please contact your local branch's loan department</p>
+    </div>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name">
+            <br/>
+            <label for="middle-initial">Middle Initial:</label>
+            <input type="text" name="middle Initial">
+            <br/>
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name">
+            <br/>
+            <label for="address">Address (Permanent Residence):</label>
+            <input type="text" name:"address">
+            <br/>
+            <label for="email">Email Address:</label>
+            <input type="text" name:"email">
+            <br/>
+            <label for="phone">Contact Number (Home or Mobile):</label>
+            <input type="text" name:"phone">
+            <br/>
+            <label for="linkedin">LinkedIn URL:</label>
+            <input type="text" name:"linkedin">
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Employer and Income Information</legend>
+            <label for="occupation">Occupation:</label>
+            <input type="text" name:"occupation">
+            <br/>
+            <label for="employer-name">Employer/Company Name:</label>
+            <input type="text" name:"employer-name">
+            <br/>
+            <label for="employer-address">Employer Address:</label>
+            <input type="text" name:"employer-address">
+            <br/>
+            <label for="annual-income">Yearly Income (from all sources):</label>
+            <input type="text" name:"annual-income">
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Loan Information</legend>
+            <label for="type-of-loan">What type of loan are you seeking?</label>
+            <select id="type-of-loan" name="type">
+                <option>Commercial</option>
+                <option>Mortgage</option>
+                <option>Real Estate</option>
+                <option>Personal</option>
+            </select>
+            <br/>
+            <label for="loan-length">Requested length of loan?</label>
+            <input type="radio" name="5-years" value="5-years"> 5 Years
+            <input type="radio" name="15-years" value="15-years"> 15 Years
+            <input type="radio" name="30-years" value="30-years"> 30 Years
+            <br/>
+            <label for="special-conditions">Special Conditions:</label>
+            <br/>
+            <input type="checkbox" name="down-payment" value="down-payment"> I have a downpayment
+            <br/>
+            <input type="checkbox" name="married" value="married"> Married/Applying with Spouse
+            <br/>
+            <input type="checkbox" name="out-of-state" value="out-of-state"> Out-of-state resident
+            <br/>
+            <input type="checkbox" name="cosigner" value="cosigner"> Loan will be co-signed
+        </fieldset>
+        <br/>
+        <input type="submit" value="Cross Your Fingers and Send!"></input>
+    </form>
